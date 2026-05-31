@@ -4,7 +4,7 @@ WORKDIR /app
 
 # --- deps layer ---
 FROM base AS deps
-COPY pnpm-workspace.yaml pnpm-lock.yaml package.json ./
+COPY pnpm-workspace.yaml package.json ./
 COPY lib/api-spec/package.json lib/api-spec/
 COPY lib/api-client-react/package.json lib/api-client-react/
 COPY lib/api-zod/package.json lib/api-zod/
